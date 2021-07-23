@@ -172,6 +172,8 @@ header {
 }
 .img_slider {
   transition: 0.3s ease;
+  display: block;
+  margin: auto;
   .grid {
     grid-template-columns: 1fr 1.5fr;
     position: relative;

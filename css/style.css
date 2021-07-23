@@ -214,6 +214,8 @@ header nav ul li a {
 .img_slider {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  display: block;
+  margin: auto;
 }
 
 .img_slider .grid {
