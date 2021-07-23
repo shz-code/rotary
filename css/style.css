@@ -297,6 +297,12 @@ header nav ul li a {
   color: rgba(0, 0, 0, 0.089);
 }
 
+@media (max-width: 1000px) {
+  .img_slider .grid .img_slider__slider .img_slider__sliderIcon i {
+    display: none;
+  }
+}
+
 .contact {
   background: #333333;
   color: white;
