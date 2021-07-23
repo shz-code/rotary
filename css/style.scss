@@ -20,6 +20,13 @@
         line-height: 30px;
       }
     }
+    @media (max-width: 1000px) {
+        height: auto;
+        .row{
+            text-align: center;
+            display: block;
+        }
+    }
   }
   .pre_header_imgBox {
     margin: auto;

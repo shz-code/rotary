@@ -22,6 +22,16 @@
   line-height: 30px;
 }
 
+@media (max-width: 1000px) {
+  .pre_header .pre_header__banner {
+    height: auto;
+  }
+  .pre_header .pre_header__banner .row {
+    text-align: center;
+    display: block;
+  }
+}
+
 .pre_header .pre_header_imgBox {
   margin: auto;
   max-width: 1000px;
