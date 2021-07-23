@@ -172,18 +172,15 @@ header {
 }
 .img_slider {
   transition: 0.3s ease;
-  display: block;
-  margin: auto;
   .grid {
     grid-template-columns: 1fr 1.5fr;
     position: relative;
-    overflow-x: hidden;
+    overflow-x: scroll;
     .img_slider__imgBox {
-      max-width: 500px;
-    }
+      max-width: 500px;}
+      padding: 0 5px;
     .img_slider__slider {
       max-width: 645px;
-      margin: 0 10px;
       width: 100%;
       .imgBo {
         // transform: translateX(115%);
@@ -192,6 +189,7 @@ header {
         position: absolute;
         height: 100%;
         z-index: -1;
+        padding: 0 5px;
         transition: 0.5s ease;
         &.active {
           // transform: translateX(0%);
@@ -235,7 +233,9 @@ header {
         }
       }
     }
+    @media (max-width:1000px) {
   }
+}
 }
 .contact{
     background: #333333;

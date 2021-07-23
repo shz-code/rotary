@@ -214,15 +214,14 @@ header nav ul li a {
 .img_slider {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-  display: block;
-  margin: auto;
 }
 
 .img_slider .grid {
   -ms-grid-columns: 1fr 1.5fr;
       grid-template-columns: 1fr 1.5fr;
   position: relative;
-  overflow-x: hidden;
+  overflow-x: scroll;
+  padding: 0 5px;
 }
 
 .img_slider .grid .img_slider__imgBox {
@@ -231,7 +230,6 @@ header nav ul li a {
 
 .img_slider .grid .img_slider__slider {
   max-width: 645px;
-  margin: 0 10px;
   width: 100%;
 }
 
@@ -240,6 +238,7 @@ header nav ul li a {
   position: absolute;
   height: 100%;
   z-index: -1;
+  padding: 0 5px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
