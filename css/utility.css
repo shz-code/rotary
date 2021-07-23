@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap");
+:root {
+  --primary-font: 'Poppins', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.f-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.jc-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jc-spaceB {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imgBox {
+  width: 100%;
+}
+
+.imgBox img {
+  vertical-align: middle;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.nav_adjust {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+@media (max-width: 1000px) {
+  .nav_adjust {
+    margin-top: -220px;
+  }
+}
+
+.nav_adjust.pos {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=utility.css.map */
