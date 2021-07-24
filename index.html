@@ -115,29 +115,31 @@
             <div class="master__navigator">
               <ul>
                 <li  data-target=".recent">
-                  <a class="master__navigator_link" href="#recent">recent</a>
+                  <a class="master__navigator_link closable" href="#recent">recent</a>
                 </li>
                 <hr />
-                <li  class="master__navigator_link" data-target=".rcc">
+                <li  class="master__navigator_link closable" data-target=".rcc">
                   rotary code of conduct
                 </li>
                 <hr />
                 <li data-target=".charter">
-                  <a  class="master__navigator_link" href="#charter">charter memeber</a>
+                  <a  class="master__navigator_link closable" href="#charter">charter memeber</a>
                 </li>
                 <hr />
-                <li class="master__navigator_link" data-target=".trf">
+                <li class="master__navigator_link closable" data-target=".trf">
                   tRF contributors
                 </li>
                 <hr />
-                <li class="master__navigator_link" data-target=".gallary">
+                <li class="master__navigator_link master__nav_clickable" onclick="gallary()" data-target=".gallary">
                   our gallary <span>&#62;</span>
                   <ul class="master__navigator_link_nested">
-                    <li class="master__navigator_link" data-target=".photo">
-                      Photo Gallary
+                    <li class="master__navigator_link closable" data-target=".photo">
+                     <a href="#photo">
+                        Photo Gallary
+                     </a> 
                     </li>
                     <hr />
-                    <li class="master__navigator_link" data-target=".video">
+                    <li class="master__navigator_link closable" data-target=".video">
                       Video gallary
                     </li>
                   </ul>
@@ -410,9 +412,9 @@
               </div>
               <!-- master__navigator item end -->
               <!-- master__navigator item start -->
-              <div class="rcc master__navigator_item">
+              <div class="photo master__navigator_item" id="photo">
                 <div class="master__body_content">
-                  <h1>Rotary Code of Conduct</h1>
+                  <h1>Photo Gallery</h1>
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Optio, quae quas quisquam debitis, sequi ea tenetur dolor

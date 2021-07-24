@@ -7,7 +7,8 @@ let imgSliderContainer = document.querySelector(".img_slider");
 let navAdjustment = document.querySelector('.nav_adjust');
 let masterNavtog = document.querySelector(".master__navtog");
 let masterNav = document.querySelector('.master__navigator');
-let masterNav_Link = masterNav.querySelectorAll(".master__navigator_link");
+let masterNav_Link = masterNav.querySelectorAll(".master__navigator_link.closable");
+let master__nav_clickable = masterNav.querySelector(".master__nav_clickable");
 let body = document.querySelector("body");
 
 hamBtn.addEventListener("click", ()=>{
@@ -20,13 +21,16 @@ hamBtn.addEventListener("click", ()=>{
 function historytog(){
     nav__clickable.classList.toggle("nav__open");
 };
+function gallary(){
+    master__nav_clickable.classList.toggle("nested");
+};
 function bodyHide() {
     body.classList.toggle("hide");
 }
 function masterNavToggle(){
     masterNavtog.classList.toggle('active');
     masterNav.classList.toggle("active");
-    bodyHide();
+    // bodyHide();
 }
 masterNav_Link.forEach((i)=>{
     i.addEventListener("click" , ()=>{

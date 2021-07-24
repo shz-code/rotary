@@ -344,25 +344,25 @@ header nav ul li a {
   cursor: pointer;
 }
 
-#master .master__container .master__navigator .master__navigator_link:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: black;
-  opacity: 0.2;
-  z-index: -1;
-}
-
-#master .master__container .master__navigator .master__navigator_link:hover .master__navigator_link_nested {
-  display: block !important;
-}
-
-#master .master__container .master__navigator .master__navigator_link:hover span {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+@media (min-width: 1000px) {
+  #master .master__container .master__navigator .master__navigator_link:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.2;
+    z-index: -1;
+  }
+  #master .master__container .master__navigator .master__navigator_link:hover .master__navigator_link_nested {
+    display: block !important;
+  }
+  #master .master__container .master__navigator .master__navigator_link:hover span {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
 }
 
 #master .master__container .master__navigator .master__navigator_link span {
@@ -496,6 +496,41 @@ header nav ul li a {
     -webkit-transform: translate(0%, -20%);
             transform: translate(0%, -20%);
   }
+  #master .master__container .master__navigator .master__navigator_link.nested .master__navigator_link_nested {
+    display: block !important;
+  }
+  #master .master__container .master__navigator .master__navigator_link.nested span {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  #master .master__container .master__navigator .master__navigator_link span {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    font-size: 1rem;
+    text-align: right;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  #master .master__container .master__navigator .master__navigator_link .master__navigator_link_nested {
+    display: none;
+  }
+  #master .master__container .master__navigator .master__navigator_link .master__navigator_link_nested li {
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10;
+  }
+  #master .master__container .master__navigator .master__navigator_link .master__navigator_link_nested li:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.2;
+    z-index: -1;
+  }
 }
 
 .contact {
@@ -609,7 +644,9 @@ header nav ul li a {
 }
 
 @media (max-width: 1000px) {
-  .contact .row .contact__officedetails, .contact .row .contact__sociallinks, .contact .row .contact__quicklinks {
+  .contact .row .contact__officedetails,
+  .contact .row .contact__sociallinks,
+  .contact .row .contact__quicklinks {
     width: 100%;
   }
 }
