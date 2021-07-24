@@ -13,6 +13,9 @@ html{
 body{
     font-family: var(--primary-font);
     // height: 200vh;
+    &.hide{
+        overflow: hidden;
+    }
 }
 .container{
     max-width: 1200px;

@@ -2,8 +2,8 @@
   --primary-font: "Poppins", sans-serif;
   --bg-primary: #4f1468;
   --hamBtn-color: white;
-  --bg-master: #D7D7E0;
-  --yellow : #feeb0b;
+  --bg-master: #d7d7e0;
+  --yellow: #feeb0b;
 }
 .pre_header {
   .pre_header__banner {
@@ -239,20 +239,23 @@ header {
 }
 #master {
   background: var(--bg-master);
-  .master__divider{
+  .master__divider {
     height: 5px;
     width: 100%;
     background: white;
     box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.288);
   }
-  .master__container{
+  .master__container {
     // display: flex;
     padding-top: 40px;
     overflow: hidden;
-    .master__navigator{
+    .master__navtog{
+      display: none;
+    }
+    .master__navigator {
       border-top: 3px solid var(--yellow);
       flex: 25%;
-      .master__navigator_link{
+      .master__navigator_link {
         display: inline-block;
         width: 100%;
         position: relative;
@@ -264,8 +267,8 @@ header {
         color: white;
         z-index: 10;
         cursor: pointer;
-        &:hover{
-          &::before{
+        &:hover {
+          &::before {
             content: "";
             position: absolute;
             top: 0;
@@ -276,14 +279,14 @@ header {
             opacity: 0.2;
             z-index: -1;
           }
-          .master__navigator_link_nested{
-            display: block!important;
+          .master__navigator_link_nested {
+            display: block !important;
           }
-          span{
+          span {
             transform: rotate(90deg);
           }
         }
-        span{
+        span {
           display: inline-block;
           position: absolute;
           right: 10px;
@@ -291,7 +294,7 @@ header {
           text-align: right;
           transition: 0.2s ease;
         }
-        .master__navigator_link_nested{
+        .master__navigator_link_nested {
           display: none;
           list-style: none;
           position: absolute;
@@ -300,12 +303,12 @@ header {
           height: auto;
           width: 70%;
           background: var(--bg-primary);
-          li{
+          li {
             padding: 10px 20px;
             position: relative;
             z-index: 10;
-            &:hover{
-              &::before{
+            &:hover {
+              &::before {
                 content: "";
                 position: absolute;
                 top: 0;
@@ -321,21 +324,21 @@ header {
         }
       }
     }
-    .master__body{
+    .master__body {
       // border: 2px solid red;
       margin: 0 40px;
       flex: 75%;
       height: 80vh;
       overflow: scroll;
-      -ms-overflow-style: none;  /* Internet Explorer 10+ */
-      scrollbar-width: none;  /* Firefox */
-      &::-webkit-scrollbar{
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none; /* Firefox */
+      &::-webkit-scrollbar {
         display: none;
       }
-      .recent__tabs{
+      .recent__tabs {
         display: flex;
         justify-content: space-evenly;
-        .recent__tabs_item{
+        .recent__tabs_item {
           display: inline-block;
           text-align: center;
           width: 100%;
@@ -343,8 +346,8 @@ header {
           text-transform: capitalize;
           border: 1px solid gray;
           cursor: pointer;
-          &.active{
-            background: #EDEDED;
+          &.active {
+            background: #ededed;
           }
         }
       }
@@ -354,10 +357,48 @@ header {
       //     display: block;
       //   }
       // }
-      .master__body_content{
+      .master__body_content {
         text-align: justify;
-        h1{
+        h1 {
           text-transform: capitalize;
+        }
+      }
+    }
+    @media (max-width: 1000px) {
+      .master__navtog{
+        display: block;
+        height: 30px;
+        width: 80px;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.301);
+        margin-left: 5px;
+        top: 1%;
+        line-height: 30px;
+        text-align: center;
+        font-size: 12px;
+        cursor: pointer;
+        span{
+          transition: 0.3s ease;
+          transform: rotate(0deg);
+        }
+        &.active{
+          span{
+            display: inline-block;
+          transition: 0.3s ease;
+            transform: rotate(180deg);
+          }
+        }
+      }
+      display: block;
+      position: relative;
+      .master__navigator {
+        position: absolute;
+        top: 20%;
+        z-index: 10;
+        transition: 0.3s ease;
+        transform: translate(-105% , -20%);
+        &.active{
+          transform: translate(0% , -20%);
         }
       }
     }

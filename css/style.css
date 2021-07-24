@@ -2,7 +2,7 @@
   --primary-font: "Poppins", sans-serif;
   --bg-primary: #4f1468;
   --hamBtn-color: white;
-  --bg-master: #D7D7E0;
+  --bg-master: #d7d7e0;
   --yellow: #feeb0b;
 }
 
@@ -319,6 +319,10 @@ header nav ul li a {
   overflow: hidden;
 }
 
+#master .master__container .master__navtog {
+  display: none;
+}
+
 #master .master__container .master__navigator {
   border-top: 3px solid var(--yellow);
   -webkit-box-flex: 25%;
@@ -437,7 +441,7 @@ header nav ul li a {
 }
 
 #master .master__container .master__body .recent__tabs .recent__tabs_item.active {
-  background: #EDEDED;
+  background: #ededed;
 }
 
 #master .master__container .master__body .master__body_content {
@@ -446,6 +450,52 @@ header nav ul li a {
 
 #master .master__container .master__body .master__body_content h1 {
   text-transform: capitalize;
+}
+
+@media (max-width: 1000px) {
+  #master .master__container {
+    display: block;
+    position: relative;
+  }
+  #master .master__container .master__navtog {
+    display: block;
+    height: 30px;
+    width: 80px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.301);
+    margin-left: 5px;
+    top: 1%;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  #master .master__container .master__navtog span {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  #master .master__container .master__navtog.active span {
+    display: inline-block;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  #master .master__container .master__navigator {
+    position: absolute;
+    top: 20%;
+    z-index: 10;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-transform: translate(-105%, -20%);
+            transform: translate(-105%, -20%);
+  }
+  #master .master__container .master__navigator.active {
+    -webkit-transform: translate(0%, -20%);
+            transform: translate(0%, -20%);
+  }
 }
 
 .contact {

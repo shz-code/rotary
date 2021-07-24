@@ -5,6 +5,11 @@ let nav__clickable = document.querySelector(".nav__clickable");
 let imgSlider = document.querySelector(".img_slider__slider");
 let imgSliderContainer = document.querySelector(".img_slider");
 let navAdjustment = document.querySelector('.nav_adjust');
+let masterNavtog = document.querySelector(".master__navtog");
+let masterNav = document.querySelector('.master__navigator');
+let masterNav_Link = masterNav.querySelectorAll(".master__navigator_link");
+let body = document.querySelector("body");
+
 hamBtn.addEventListener("click", ()=>{
     nav__ul.classList.toggle("nav__ul__open");
     navAdjustment.classList.toggle('pos');
@@ -15,6 +20,27 @@ hamBtn.addEventListener("click", ()=>{
 function historytog(){
     nav__clickable.classList.toggle("nav__open");
 };
+function bodyHide() {
+    body.classList.toggle("hide");
+}
+function masterNavToggle(){
+    masterNavtog.classList.toggle('active');
+    masterNav.classList.toggle("active");
+    bodyHide();
+}
+masterNav_Link.forEach((i)=>{
+    i.addEventListener("click" , ()=>{
+        masterNavToggle();
+    });
+});
+document.addEventListener("click", (e)=>{
+    if(body.classList.contains("hide")){
+        if(!e.target.classList.contains("master__navigator_link") 
+        && !e.target.classList.contains("master__navtog")){
+            masterNavToggle();
+        }
+    }
+});
 // Navigation End
 // Navigation End
 window.addEventListener("load", () =>{
@@ -76,7 +102,6 @@ window.addEventListener("load", () =>{
     let masterNav = document.querySelector('.master__navigator');
     let masterBody = document.querySelector('.master__body');
     let masterNav_Link = masterNav.querySelectorAll(".master__navigator_link");
-
     // masterNav_Link.forEach((item) =>{
     //     item.addEventListener("click" , (event)=>{
     //         let selectedItem = event.target;
@@ -91,6 +116,7 @@ window.addEventListener("load", () =>{
     //         }
     //     });
     // });
+
     // Master Section End
     // Master Section End
 });
