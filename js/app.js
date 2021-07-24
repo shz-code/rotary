@@ -30,7 +30,9 @@ function bodyHide() {
 function masterNavToggle(){
     masterNavtog.classList.toggle('active');
     masterNav.classList.toggle("active");
-    bodyHide();
+    if(window.innerWidth < 1000){
+        bodyHide();
+    }
 }
 masterNav_Link.forEach((i)=>{
     i.addEventListener("click" , ()=>{
@@ -106,23 +108,28 @@ window.addEventListener("load", () =>{
     // Img Slider end
     // Master Section Start
     // Master Section Start
-    let masterNav = document.querySelector('.master__navigator');
-    let masterBody = document.querySelector('.master__body');
-    let masterNav_Link = masterNav.querySelectorAll(".master__navigator_link");
-    // masterNav_Link.forEach((item) =>{
-    //     item.addEventListener("click" , (event)=>{
-    //         let selectedItem = event.target;
-    //         let target = selectedItem.getAttribute("data-target");
-    //         let activatedItem = masterBody.querySelector(".master__navigator_item.active");
-    //         if(masterBody.querySelector(target)){
-    //             activatedItem.classList.remove("active");
-    //             masterBody.querySelector(target).classList.add("active");
-    //         }
-    //         else{
-    //             console.log("NO element");
-    //         }
-    //     });
-    // });
+    let recenTabs = document.querySelector('.recent__tabs');
+    let recentTabsItem = recenTabs.querySelectorAll(".recent__tabs_item");
+    let recentBody = document.querySelector(".recent__body");
+    recentTabsItem.forEach((item) =>{
+        item.addEventListener("click" , (event)=>{
+            let selectedItem = event.target;
+            let target = selectedItem.getAttribute("data-target");
+            let activatedRecentTab = recenTabs.querySelector(".recent__tabs_item.active");
+            let activatedItem = recentBody.querySelector(".master__body_content.active");
+            if(recentBody.querySelector(target)){
+                if(!selectedItem.classList.contains("active")){
+                    selectedItem.classList.add("active");
+                    activatedRecentTab.classList.remove("active")
+                }
+                activatedItem.classList.remove("active");
+                recentBody.querySelector(target).classList.add("active");
+            }
+            else{
+                console.log("NO element");
+            }
+        });
+    });
 
     // Master Section End
     // Master Section End

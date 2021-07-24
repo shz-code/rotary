@@ -1,536 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/utility.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-  <body>
+<body>
     <!-- Pre header date time start -->
     <div class="pre_header">
-      <div class="pre_header__banner">
-        <div class="container row jc-spaceB">
-          <div class="pre_header__bannerNotice">
-            <marquee behavior="scroll" direction="left">
-              We Meet Every Saturday at 7.30 P.M at Rotary Centre, Unique
-              Heights (15th floor)/ Zoom Online Meet for present covid 19
-              pandamic.
-            </marquee>
-          </div>
-          <div class="pre_header__bannerDate">
-            <i class="far fa-clock"></i>
-            <span id="time"></span> ,
-            <span id="dateht"></span>
-          </div>
+        <div class="pre_header__banner">
+            <div class="container row jc-spaceB">
+                <div class="pre_header__bannerNotice">
+                    <marquee behavior="scroll" direction="left">
+                        We Meet Every Saturday at 7.30 P.M at Rotary Centre, Unique
+                        Heights (15th floor)/ Zoom Online Meet for present covid 19
+                        pandamic.
+                    </marquee>
+                </div>
+                <div class="pre_header__bannerDate">
+                    <i class="far fa-clock"></i>
+                    <span id="time"></span> ,
+                    <span id="dateht"></span>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="pre_header_imgBox row jc-center container">
-        <img src="./img/header_logo.jpg" alt="Rotary Club Of Dhaka Dynamic" />
-      </div>
+        <div class="pre_header_imgBox row jc-center container">
+            <img src="./img/header_logo.jpg" alt="Rotary Club Of Dhaka Dynamic" />
+        </div>
     </div>
     <!-- Pre header date time end -->
     <!-- header navigation start -->
     <header>
-      <nav class="container">
-        <ul class="nav__ul row f-wrap">
-          <li><a href="#">Home</a></li>
-          <li class="nav__clickable" onclick="historytog()">
-            <a href="#">history</a>
-            <ul class="nav__nestedNav">
-              <hr />
-              <li><a href="">At a glance</a></li>
-              <hr />
-              <li><a href="">charter member</a></li>
-              <hr />
-              <li><a href="">remembrance</a></li>
-              <hr />
-              <li><a href="">past presidents</a></li>
-              <hr />
+        <nav class="container">
+            <ul class="nav__ul row f-wrap">
+                <li><a href="#">Home</a></li>
+                <li class="nav__clickable" onclick="historytog()">
+                    <a href="#">history <span>&#62;</span></a>
+                    <ul class="nav__nestedNav">
+                        <hr />
+                        <li><a href="">At a glance</a></li>
+                        <hr />
+                        <li><a href="">charter member</a></li>
+                        <hr />
+                        <li><a href="">remembrance</a></li>
+                        <hr />
+                        <li><a href="">past presidents</a></li>
+                        <hr />
+                    </ul>
+                </li>
+                <li><a href="#">members directory</a></li>
+                <li><a href="#">board of directors</a></li>
+                <li><a href="#">contact us</a></li>
             </ul>
-          </li>
-          <li><a href="#">members directory</a></li>
-          <li><a href="#">board of directors</a></li>
-          <li><a href="#">contact us</a></li>
-        </ul>
-      </nav>
-      <div class="header__btn row jc-center align-center">
-        <button id="hamBtn" class="row jc-center align-center">
-          <span></span>
-        </button>
-      </div>
+        </nav>
+        <div class="header__btn row jc-center align-center">
+            <button id="hamBtn" class="row jc-center align-center">
+                <span></span>
+            </button>
+        </div>
     </header>
     <!-- header navigation end -->
     <div class="nav_adjust">
-      <!-- Utility -->
-      <!-- sided slider start     -->
-      <div class="img_slider">
-        <div class="container row jc-spaceB img_slider__container">
-          <div class="img_slider__imgBox imgBox">
-            <img src="./img/cropped-Theme-2020-2021.png" alt="" />
-          </div>
-          <div class="img_slider__slider">
-            <div class="img_slider__slider_item">
-              <img src="./img/68_s.jpeg" alt="" />
+        <!-- Utility -->
+        <!-- sided slider start     -->
+        <div class="img_slider">
+            <div class="container row jc-spaceB img_slider__container">
+                <div class="img_slider__imgBox imgBox">
+                    <img src="./img/cropped-Theme-2020-2021.png" alt="" />
+                </div>
+                <div class="img_slider__slider">
+                    <div class="img_slider__slider_item">
+                        <img src="./img/68_s.jpeg" alt="" />
+                    </div>
+                    <div class="img_slider__slider_item">
+                        <img src="./img/70_s.png" alt="" />
+                    </div>
+                    <div class="img_slider__slider_item">
+                        <img src="./img/72_s.png" alt="" />
+                    </div>
+                    <div class="img_slider__slider_item">
+                        <img src="./img/73_s.jpeg" alt="" />
+                    </div>
+                    <div class="img_slider__sliderIcon">
+                        <div class="arrow left">
+                            <i class="fas fa-arrow-circle-left"></i>
+                        </div>
+                        <div class="arrow right">
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="img_slider__slider_item">
-              <img src="./img/70_s.png" alt="" />
-            </div>
-            <div class="img_slider__slider_item">
-              <img src="./img/72_s.png" alt="" />
-            </div>
-            <div class="img_slider__slider_item">
-              <img src="./img/73_s.jpeg" alt="" />
-            </div>
-            <div class="img_slider__sliderIcon">
-              <div class="arrow left">
-                <i class="fas fa-arrow-circle-left"></i>
-              </div>
-              <div class="arrow right">
-                <i class="fas fa-arrow-circle-right"></i>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- sided slider end     -->
-      <!-- master start    -->
-      <section class="section master" id="master">
-        <div class="master__divider"></div>
-        <div class="container">
-          <div class="row master__container">
-            <div class="master__navtog" onclick="masterNavToggle()">
-            navbar <span>&#62;</span>
-            </div>
-            <div class="master__navigator">
-              <ul>
-                <li  data-target=".recent">
-                  <a class="master__navigator_link closable" href="#recent">recent</a>
-                </li>
-                <hr />
-                <li  class="master__navigator_link closable" data-target=".rcc">
-                  rotary code of conduct
-                </li>
-                <hr />
-                <li data-target=".charter">
-                  <a  class="master__navigator_link closable" href="#charter">charter memeber</a>
-                </li>
-                <hr />
-                <li class="master__navigator_link closable" data-target=".trf">
-                  tRF contributors
-                </li>
-                <hr />
-                <li class="master__navigator_link master__nav_clickable" onclick="gallary()" data-target=".gallary">
-                  our gallary <span>&#62;</span>
-                  <ul class="master__navigator_link_nested">
-                    <li class="master__navigator_link closable" data-target=".photo">
-                     <a href="#photo">
-                        Photo Gallary
-                     </a> 
-                    </li>
-                    <hr />
-                    <li class="master__navigator_link closable" data-target=".video">
-                      Video gallary
-                    </li>
-                  </ul>
-                </li>
-                <hr />
-              </ul>
-            </div>
-            <div class="master__body">
-              <!-- master__navigator item start -->
-              <div class="recent master__navigator_item" id="recent">
-                <div class="recent__tabs">
-                  <span class="recent__tabs_item active" data-target=".msg"
-                    >messages</span
-                  >
-                  <span class="recent__tabs_item" data-target=".news"
-                    >news & events</span
-                  >
-                  <span class="recent__tabs_item">club project calendar</span>
-                </div>
-                <div class="recent__body master__body_content msg">
-                  <h1>msg</h1>
-                  <p>
-                    Presidential message Holger Knaack President 2020-21 July
-                    2020 This does not seem like a time for great optimism, but
-                    it has to be. Long before Rotary was founded, the world
-                    dealt with great crises that tested humankind's ability to
-                    progress and endure. In...
-                  </p>
-                </div>
-                <div class="recent__body master__body_content news">
-                  <h1>news</h1>
-                  <p>
-                    Fellow Rotary Friends, Assalamu Alaikum, Best wishes to all.
-                    Today is the First RWM of the new Rotary Year 2020-21 of RC
-                    Dhaka Dynamic. I am very happy to play my role as club
-                    president by this year. We, as a TEAM, achieve our goals.
-                    Together Everyone Achieves More. Please cooperate me to
-                    lead...
-                  </p>
-                </div>
-              </div>
-              <!-- master__navigator item end -->
-              <!-- master__navigator item start -->
-              <div class="rcc master__navigator_item">
-                <div class="master__body_content">
-                  <h1>Rotary Code of Conduct</h1>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Optio, quae quas quisquam debitis, sequi ea tenetur dolor
-                    consectetur delectus sed culpa odit dolorum tempora laborum
-                    labore fugit deserunt iste suscipit.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Reprehenderit amet officiis culpa rem fuga labore possimus
-                  asperiores non odio beatae explicabo ex sint id debitis itaque
-                  adipisci quos, autem sapiente. At aliquid nam dolorum quaerat
-                  id, iusto fugit ad eius? Harum, ea magni. Magnam sapiente
-                  aliquid doloribus dolores quisquam fugit quidem eos, fuga in
-                  eaque sit recusandae iure esse, facilis quas rerum laborum. Et
-                  ea labore, dolores itaque, commodi incidunt molestias a sunt
-                  eaque doloribus natus, fugit doloremque officia tempora
-                  excepturi reprehenderit hic. Sed nesciunt aut modi odio, hic
-                  voluptatibus necessitatibus accusamus? Rem aliquid fugiat
-                  repellendus minus vel, consectetur optio nesciunt sit
-                  quibusdam quasi est consequuntur nisi exercitationem commodi
-                  incidunt excepturi ea quaerat, debitis doloremque dignissimos
-                  quae eveniet quo aspernatur? Asperiores perspiciatis error,
-                  facere nisi est vero ipsa saepe optio hic laudantium id
-                  cupiditate praesentium. Ducimus officia nobis deserunt nulla
-                  placeat repudiandae cum molestias temporibus. Hic consequatur
-                  alias deserunt labore voluptas eius molestias dolorum quis
-                  impedit nobis explicabo iusto quos, pariatur dolorem earum cum
-                  veritatis sunt possimus corrupti non veniam tenetur.
-                  Reprehenderit assumenda minus voluptatum recusandae omnis
-                  voluptatibus. Non hic quaerat iure maiores eaque
-                  necessitatibus fugiat aliquam beatae, qui expedita atque
-                  voluptatem asperiores nisi? Aperiam cum officia corporis
-                  voluptatem omnis eius, debitis dolor esse repudiandae eveniet
-                  placeat exercitationem inventore illum repellendus magnam quo,
-                  unde minima labore! Doloremque quam in rem cumque possimus
-                  voluptatem totam adipisci! Vitae magni quos suscipit mollitia
-                  placeat expedita, quas esse laboriosam est ipsum nihil
-                  accusantium molestiae aliquam et a nam cumque voluptates sed
-                  autem vel! Doloribus earum natus alias architecto perferendis
-                  molestias aspernatur, optio ratione iste harum commodi
-                  voluptatem reiciendis sunt itaque provident nam rem? In, autem
-                  atque necessitatibus repudiandae blanditiis qui iure itaque
-                  voluptatibus, excepturi dolore veniam magnam fuga aliquam,
-                  vitae eos exercitationem vero amet doloribus alias at. Eum
-                  recusandae laboriosam quibusdam minus dolor esse maxime neque
-                  fugit, eius obcaecati voluptate vitae omnis magni, ex fugiat
-                  officiis quasi labore sapiente ad quaerat accusamus quos.
-                  Rerum, velit quae id error aspernatur delectus architecto
-                  repellendus neque sunt minus quam nostrum doloribus similique
-                  atque nulla blanditiis. Iusto hic cum nobis sapiente itaque
-                  nesciunt amet molestiae incidunt recusandae doloribus, dicta
-                  libero. Obcaecati pariatur consectetur excepturi tenetur
-                  magnam tempore omnis, quia dolore officia accusamus maxime
-                  blanditiis aut earum adipisci ex nisi alias delectus debitis
-                  odit voluptatibus quae voluptatum deserunt rerum soluta.
-                  Placeat doloribus magni illum ut labore itaque adipisci,
-                  deleniti quam similique aliquam libero ad quidem, sint
-                  commodi, ipsum repellendus deserunt tempore quos quia fugit
-                  autem odit quo error est. Ipsum in, sed omnis, aut ut ullam
-                  amet iure illo vel itaque enim, voluptates ipsam officia
-                  distinctio. Cupiditate molestiae nulla delectus temporibus
-                  amet! Provident dolor eaque recusandae. Beatae delectus animi
-                  reiciendis hic consectetur odio quas ea similique optio
-                  consequuntur molestiae assumenda libero provident magni
-                  aspernatur sunt, dolores porro repudiandae a facere. Ipsum quo
-                  asperiores nihil beatae pariatur inventore cumque earum,
-                  corporis suscipit hic ipsam voluptas deserunt quasi. Vel
-                  tempora eveniet incidunt molestias exercitationem corporis rem
-                  fugiat dicta repudiandae enim, ullam repellendus iusto
-                  voluptate nostrum ex asperiores veritatis harum? Ipsa vitae
-                  fuga nihil consequuntur iste sit eius accusantium nemo hic ut
-                  quia mollitia, pariatur at, quo necessitatibus aut provident
-                  distinctio, fugiat ullam eaque voluptatibus porro error!
-                  Voluptas, tempore? Quidem quis incidunt quae nesciunt maxime
-                  alias, fugiat totam dolorem molestias voluptates, porro
-                  asperiores eveniet expedita. Similique fugiat alias
-                  consectetur nesciunt tempore itaque repudiandae in labore
-                  magnam inventore repellendus obcaecati, dolore molestias ad
-                  iste adipisci asperiores pariatur ut eligendi optio amet,
-                  necessitatibus voluptates saepe exercitationem? Obcaecati quas
-                  et sint laudantium praesentium blanditiis rem inventore
-                  expedita non. Odio minus corporis repellat tenetur fugiat
-                  porro. Alias sunt perferendis dolorem veritatis vero id, fuga
-                  aut molestiae quisquam nemo quasi iusto numquam a velit rem
-                  praesentium nihil error consectetur reiciendis similique quas
-                  sint! Totam repudiandae consectetur sapiente mollitia!
-                  Inventore sed porro in, sapiente facilis enim sequi omnis a
-                  nostrum quisquam voluptatum voluptate, unde vel, cupiditate ad
-                  amet iste vitae officiis sint delectus? Numquam accusantium
-                  cupiditate optio sunt impedit dignissimos velit? Ratione unde
-                  quidem odit facilis doloribus debitis deserunt provident
-                  nostrum, laudantium, cum, inventore itaque nemo dolor dolore
-                  incidunt quos ad eum repellendus. Totam deleniti incidunt
-                  eligendi? Exercitationem aliquam quisquam illo mollitia illum
-                  cumque et veniam, quas voluptatibus excepturi id sed ipsam
-                  debitis deleniti! Ipsam non impedit, ut a maxime omnis placeat
-                  modi commodi optio ea quia. Quod obcaecati consectetur earum?
-                  Eveniet ut cumque optio quas exercitationem ea, rerum dolorum
-                  neque architecto omnis debitis eaque modi? Libero, corrupti
-                  placeat, cum veniam ea, a quod quam autem voluptate impedit
-                  illum provident expedita voluptatem? Cupiditate repellendus
-                  deserunt optio delectus, minima aliquid suscipit itaque eius
-                  sed eos modi obcaecati laborum facilis distinctio vitae
-                  voluptas amet sequi dolorum fugiat. Non est atque voluptate
-                  harum blanditiis dolore cumque accusantium quia natus
-                  doloribus vitae minima tempore labore omnis quidem dicta
-                  optio, quibusdam molestiae. Ipsam ratione rem perspiciatis
-                  delectus quasi. Numquam quidem atque vitae dolor quod
-                  laboriosam, eaque, totam harum deleniti aperiam vero nam aut
-                  distinctio quisquam! Laudantium provident expedita numquam
-                  amet vitae fuga tempore sapiente sed? Quo minus nesciunt porro
-                  illum libero enim, expedita cupiditate iure sint, pariatur
-                  asperiores cum. Error alias quod eum minus culpa sit neque
-                  voluptas ipsum. Molestiae eos neque beatae quasi quo, magnam
-                  est nobis debitis facilis accusantium cupiditate quis nostrum.
-                  Cumque, quae hic quis, nisi asperiores minus ab qui amet,
-                  aperiam magnam veniam. Ratione architecto neque repellat
-                  quisquam facere. Asperiores quam impedit temporibus omnis
-                  quasi quaerat fuga nam, dolorum, unde odio assumenda. Quam
-                  officiis asperiores adipisci maxime numquam necessitatibus
-                  minima tempora accusantium? Ullam consectetur sint provident
-                  praesentium maiores odit at tenetur fugiat expedita, cum
-                  labore eos placeat hic iste, quia quibusdam delectus. Delectus
-                  similique explicabo porro, sed sit ratione ut, labore, minima
-                  nisi reprehenderit itaque quam eius eaque officia quos. Ea nam
-                  enim facilis excepturi esse obcaecati, illum beatae quasi
-                  iusto inventore laborum quas deleniti, exercitationem odio
-                  veniam vitae ipsa repellat commodi iure nesciunt maxime
-                  dolores. Voluptate inventore laudantium perferendis ipsam,
-                  iusto explicabo dolorum soluta. Placeat, amet, velit ea
-                  laudantium, repudiandae iste vitae tempora deleniti a facere
-                  maiores beatae veniam reiciendis commodi. Possimus facilis
-                  molestias deleniti nemo pariatur dolorem.
-                </p>
+        <!-- sided slider end     -->
+        <!-- master start    -->
+        <section class="section master" id="master">
+            <div class="master__divider"></div>
+            <div class="container">
+                <div class="row master__container">
+                    <div class="master__navtog" onclick="masterNavToggle()">
+                        navbar <span>&#62;</span>
+                    </div>
+                    <div class="master__navigator">
+                        <ul>
+                            <li data-target=".recent">
+                                <a class="master__navigator_link closable" href="#recent">recent</a>
+                            </li>
+                            <hr />
+                            <li data-target=".rcc">
+                               <a class="master__navigator_link closable" href="#rcc">rotary code of conduct</a> 
+                            </li>
+                            <hr />
+                            <li data-target=".charter">
+                                <a class="master__navigator_link closable" href="#charter">charter memeber</a>
+                            </li>
+                            <hr />
+                            <li class="master__navigator_link closable" data-target=".trf">
+                                tRF contributors
+                            </li>
+                            <hr />
+                            <li class="master__navigator_link master__nav_clickable" onclick="gallary()"
+                                data-target=".gallary">
+                                our gallary <span>&#62;</span>
+                                <ul class="master__navigator_link_nested">
+                                    <li class="master__navigator_link closable" data-target=".photo">
+                                        <a href="#photo">
+                                            Photo Gallary
+                                        </a>
+                                    </li>
+                                    <hr />
+                                    <li class="master__navigator_link closable" data-target=".video">
+                                        Video gallary
+                                    </li>
+                                </ul>
+                            </li>
+                            <hr />
+                        </ul>
+                    </div>
+                    <div class="master__body">
+                        <!-- master__navigator item start -->
+                        <div class="recent master__navigator_item" id="recent">
+                            <div class="recent__tabs">
+                                <span class="recent__tabs_item active" data-target=".msg">messages</span>
+                                <span class="recent__tabs_item" data-target=".news">news & events</span>
+                                <span class="recent__tabs_item" data-target=".club">club project calendar</span>
+                            </div>
+                            <div class="recent__body">
+                                <div class="recent__body_item master__body_content msg active">
+                                    <div class="msg-group">
+                                        <div class="recent__body_item_img">
+                                            <img src="./img/2.jpg" alt="">
+                                        </div>
+                                        <div class="recent__body_item_details">
+                                            <h3>messages from president</h3>
+                                            <p>Shekhar Mehta President 2021-22 July 2021 I wish each of you and your families a great Rotary New Year! Together, let us make it the best year of our lives, by making it a year to grow more and do more. Let this be a year of changemakers, and let us begin with our membership. That is...</p>
+                                            <a href="">View details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recent__body_item master__body_content news">
+                                    <h1>news</h1>
+                                    <p>
+                                        Fellow Rotary Friends, Assalamu Alaikum, Best wishes to all.
+                                        Today is the First RWM of the new Rotary Year 2020-21 of RC
+                                        Dhaka Dynamic. I am very happy to play my role as club
+                                        president by this year. We, as a TEAM, achieve our goals.
+                                        Together Everyone Achieves More. Please cooperate me to
+                                        lead...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- master__navigator item end -->
+                        <!-- master__navigator item start -->
+                        <div class="rcc master__navigator_item" id="rcc">
+                            <div class="master__body_content">
+                                <h1>Rotary Code of Conduct</h1>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Optio, quae quas quisquam debitis, sequi ea tenetur dolor
+                                    consectetur delectus sed culpa odit dolorum tempora laborum
+                                    labore fugit deserunt iste suscipit.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Reprehenderit amet officiis culpa rem fuga labore possimus
+                                    asperiores non odio beatae explicabo ex sint id debitis itaque
+                                    adipisci quos, autem sapiente. At aliquid nam dolorum quaerat
+                                    id, iusto fugit ad eius? Harum, ea magni. Magnam sapiente
+                                    aliquid doloribus dolores quisquam fugit quidem eos, fuga in
+                                    eaque sit recusandae iure esse, facilis quas rerum laborum. Et
+                                    ea labore, dolores itaque, commodi incidunt molestias a sunt
+                                    eaque doloribus natus, fugit doloremque officia tempora
+                                    excepturi reprehenderit hic. Sed nesciunt aut modi odio, hic
+                                    voluptatibus necessitatibus accusamus? Rem aliquid fugiat
+                                    repellendus minus vel, consectetur optio nesciunt sit
+                                    quibusdam quasi est consequuntur nisi exercitationem commodi
+                                    incidunt excepturi ea quaerat, debitis doloremque dignissimos
+                                    quae eveniet quo aspernatur? Asperiores perspiciatis error,
+                                    facere nisi est vero ipsa saepe optio hic laudantium id
+                                    cupiditate praesentium. Ducimus officia nobis deserunt nulla
+                                    placeat repudiandae cum molestias temporibus. Hic consequatur
+                                    alias deserunt labore voluptas eius molestias dolorum quis
+                                    impedit nobis explicabo iusto quos, pariatur dolorem earum cum
+                                    veritatis sunt possimus corrupti non veniam tenetur.
+                                    Reprehenderit assumenda minus voluptatum recusandae omnis
+                                    voluptatibus. Non hic quaerat iure maiores eaque
+                                    necessitatibus fugiat aliquam beatae, qui expedita atque
+                                    voluptatem asperiores nisi? Aperiam cum officia corporis
+                                    voluptatem omnis eius, debitis dolor esse repudiandae eveniet
+                                    placeat exercitationem inventore illum repellendus magnam quo,
+                                    unde minima labore! Doloremque quam in rem cumque possimus
+                                    voluptatem totam adipisci! Vitae magni quos suscipit mollitia
+                                    placeat expedita, quas esse laboriosam est ipsum nihil
+                                    accusantium molestiae aliquam et a nam cumque voluptates sed
+                                    autem vel! Doloribus earum natus alias architecto perferendis
+                                    molestias aspernatur, optio ratione iste harum commodi
+                                    voluptatem reiciendis sunt itaque provident nam rem? In, autem
+                                    atque necessitatibus repudiandae blanditiis qui iure itaque
+                                    voluptatibus, excepturi dolore veniam magnam fuga aliquam,
+                                    vitae eos exercitationem vero amet doloribus alias at. Eum
+                                    recusandae laboriosam quibusdam minus dolor esse maxime neque
+                                    fugit, eius obcaecati voluptate vitae omnis magni, ex fugiat
+                                    officiis quasi labore sapiente ad quaerat accusamus quos.
+                                    Rerum, velit quae id error aspernatur delectus architecto
+                                    repellendus neque sunt minus quam nostrum doloribus similique
+                                    atque nulla blanditiis. Iusto hic cum nobis sapiente itaque
+                                    nesciunt amet molestiae incidunt recusandae doloribus, dicta
+                                    libero. Obcaecati pariatur consectetur excepturi tenetur
+                                    magnam tempore omnis, quia dolore officia accusamus maxime
+                                    blanditiis aut earum adipisci ex nisi alias delectus debitis
+                                    odit voluptatibus quae voluptatum deserunt rerum soluta.
+                                    Placeat doloribus magni illum ut labore itaque adipisci,
+                                    deleniti quam similique aliquam libero ad quidem, sint
+                                    commodi, ipsum repellendus deserunt tempore quos quia fugit
+                                    autem odit quo error est. Ipsum in, sed omnis, aut ut ullam
+                                    amet iure illo vel itaque enim, voluptates ipsam officia
+                                    distinctio. Cupiditate molestiae nulla delectus temporibus
+                                    amet! Provident dolor eaque recusandae. Beatae delectus animi
+                                    reiciendis hic consectetur odio quas ea similique optio
+                                    consequuntur molestiae assumenda libero provident magni
+                                    aspernatur sunt, dolores porro repudiandae a facere. Ipsum quo
+                                    asperiores nihil beatae pariatur inventore cumque earum,
+                                    corporis suscipit hic ipsam voluptas deserunt quasi. Vel
+                                    tempora eveniet incidunt molestias exercitationem corporis rem
+                                    fugiat dicta repudiandae enim, ullam repellendus iusto
+                                    voluptate nostrum ex asperiores veritatis harum? Ipsa vitae
+                                    fuga nihil consequuntur iste sit eius accusantium nemo hic ut
+                                    quia mollitia, pariatur at, quo necessitatibus aut provident
+                                    distinctio, fugiat ullam eaque voluptatibus porro error!
+                                    Voluptas, tempore? Quidem quis incidunt quae nesciunt maxime
+                                    alias, fugiat totam dolorem molestias voluptates, porro
+                                    asperiores eveniet expedita. Similique fugiat alias
+                                    consectetur nesciunt tempore itaque repudiandae in labore
+                                    magnam inventore repellendus obcaecati, dolore molestias ad
+                                    iste adipisci asperiores pariatur ut eligendi optio amet,
+                                    necessitatibus voluptates saepe exercitationem? Obcaecati quas
+                                    et sint laudantium praesentium blanditiis rem inventore
+                                    expedita non. Odio minus corporis repellat tenetur fugiat
+                                    porro. Alias sunt perferendis dolorem veritatis vero id, fuga
+                                    aut molestiae quisquam nemo quasi iusto numquam a velit rem
+                                    praesentium nihil error consectetur reiciendis similique quas
+                                    sint! Totam repudiandae consectetur sapiente mollitia!
+                                    Inventore sed porro in, sapiente facilis enim sequi omnis a
+                                    nostrum quisquam voluptatum voluptate, unde vel, cupiditate ad
+                                    amet iste vitae officiis sint delectus? Numquam accusantium
+                                    cupiditate optio sunt impedit dignissimos velit? Ratione unde
+                                    quidem odit facilis doloribus debitis deserunt provident
+                                    nostrum, laudantium, cum, inventore itaque nemo dolor dolore
+                                    incidunt quos ad eum repellendus. Totam deleniti incidunt
+                                    eligendi? Exercitationem aliquam quisquam illo mollitia illum
+                                    cumque et veniam, quas voluptatibus excepturi id sed ipsam
+                                    debitis deleniti! Ipsam non impedit, ut a maxime omnis placeat
+                                    modi commodi optio ea quia. Quod obcaecati consectetur earum?
+                                    Eveniet ut cumque optio quas exercitationem ea, rerum dolorum
+                                    neque architecto omnis debitis eaque modi? Libero, corrupti
+                                    placeat, cum veniam ea, a quod quam autem voluptate impedit
+                                    illum provident expedita voluptatem? Cupiditate repellendus
+                                    deserunt optio delectus, minima aliquid suscipit itaque eius
+                                    sed eos modi obcaecati laborum facilis distinctio vitae
+                                    voluptas amet sequi dolorum fugiat. Non est atque voluptate
+                                    harum blanditiis dolore cumque accusantium quia natus
+                                    doloribus vitae minima tempore labore omnis quidem dicta
+                                    optio, quibusdam molestiae. Ipsam ratione rem perspiciatis
+                                    delectus quasi. Numquam quidem atque vitae dolor quod
+                                    laboriosam, eaque, totam harum deleniti aperiam vero nam aut
+                                    distinctio quisquam! Laudantium provident expedita numquam
+                                    amet vitae fuga tempore sapiente sed? Quo minus nesciunt porro
+                                    illum libero enim, expedita cupiditate iure sint, pariatur
+                                    asperiores cum. Error alias quod eum minus culpa sit neque
+                                    voluptas ipsum. Molestiae eos neque beatae quasi quo, magnam
+                                    est nobis debitis facilis accusantium cupiditate quis nostrum.
+                                    Cumque, quae hic quis, nisi asperiores minus ab qui amet,
+                                    aperiam magnam veniam. Ratione architecto neque repellat
+                                    quisquam facere. Asperiores quam impedit temporibus omnis
+                                    quasi quaerat fuga nam, dolorum, unde odio assumenda. Quam
+                                    officiis asperiores adipisci maxime numquam necessitatibus
+                                    minima tempora accusantium? Ullam consectetur sint provident
+                                    praesentium maiores odit at tenetur fugiat expedita, cum
+                                    labore eos placeat hic iste, quia quibusdam delectus. Delectus
+                                    similique explicabo porro, sed sit ratione ut, labore, minima
+                                    nisi reprehenderit itaque quam eius eaque officia quos. Ea nam
+                                    enim facilis excepturi esse obcaecati, illum beatae quasi
+                                    iusto inventore laborum quas deleniti, exercitationem odio
+                                    veniam vitae ipsa repellat commodi iure nesciunt maxime
+                                    dolores. Voluptate inventore laudantium perferendis ipsam,
+                                    iusto explicabo dolorum soluta. Placeat, amet, velit ea
+                                    laudantium, repudiandae iste vitae tempora deleniti a facere
+                                    maiores beatae veniam reiciendis commodi. Possimus facilis
+                                    molestias deleniti nemo pariatur dolorem.
+                                </p>
 
+                            </div>
+                        </div>
+                        <!-- master__navigator item end -->
+                        <!-- master__navigator item start -->
+                        <div class="charter master__navigator_item" id="charter">
+                            <div class="master__body_content">
+                                <h1>Charter Members</h1>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Optio, quae quas quisquam debitis, sequi ea tenetur dolor
+                                    consectetur delectus sed culpa odit dolorum tempora laborum
+                                    labore fugit deserunt iste suscipit.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Iusto, hic quia asperiores, neque quis facere aliquam libero
+                                    tempora aliquid magni eum voluptas praesentium beatae sapiente
+                                    nihil vitae doloribus animi quisquam quasi quidem eius
+                                    molestias dolores numquam? Cupiditate magni facere eaque iusto
+                                    necessitatibus asperiores inventore ab! Sunt, quis ad ut
+                                    repellendus tempora reprehenderit velit? Eius tempore nihil
+                                    qui quae odit. Obcaecati quasi totam hic. Aliquid, magnam
+                                    libero cupiditate possimus dicta quos, quam iure est assumenda
+                                    iste corporis nisi consectetur. Temporibus sapiente natus
+                                    eveniet, nisi officia mollitia error animi ullam, numquam,
+                                    quia et veritatis ad delectus eligendi quam incidunt odio
+                                    optio cum. Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Nemo dolore earum aliquam fuga blanditiis dolor tempore
+                                    a labore alias natus, odio minima nobis reprehenderit unde
+                                    perspiciatis libero temporibus quis. Possimus corporis
+                                    reprehenderit nam accusantium minus odit, aut placeat! Dolores
+                                    dicta adipisci aspernatur illum, architecto commodi libero
+                                    expedita harum ipsa officia ratione odit temporibus
+                                    perspiciatis ab sapiente aliquid quo iusto quam. Odio labore
+                                    blanditiis quae illum quasi eligendi animi consequatur
+                                    veritatis aut ducimus! Totam quidem, est voluptatem laborum
+                                    repellendus suscipit doloribus itaque quas quam molestiae
+                                    expedita. Nobis, maxime aspernatur adipisci magni, ad odio
+                                    saepe inventore maiores ratione aperiam accusantium id
+                                    quibusdam consectetur molestiae eius illo! Debitis quia
+                                    numquam et enim quasi labore quod neque quaerat, fugit ipsam
+                                    distinctio tempora delectus similique fuga necessitatibus
+                                    saepe. Rerum eius, soluta at deserunt omnis, excepturi
+                                    aspernatur alias eos architecto nam ipsum reiciendis in fugiat
+                                    eum ducimus harum. Nesciunt aspernatur consequatur tenetur ex
+                                    nemo officiis aut laboriosam impedit rem, delectus, odio animi
+                                    ea itaque eveniet, expedita blanditiis! Quo harum officia vel
+                                    consequatur, labore corrupti eos animi nulla voluptas
+                                    blanditiis. Dolor quod, facere amet cumque sint sit aliquam
+                                    voluptatum blanditiis corrupti suscipit praesentium, corporis
+                                    veniam soluta voluptates iste neque natus! Eum, eius. Nihil
+                                    nam corporis esse minus sit deleniti eum laborum provident
+                                    consectetur! Deserunt, natus dolorem. Ex facere commodi
+                                    perspiciatis odio reiciendis sit quos. Recusandae doloremque,
+                                    commodi nihil odit dicta, possimus iste sapiente autem quas
+                                    repellendus repellat modi magni, nemo cumque voluptatibus ad
+                                    iure fugit blanditiis quisquam optio ea voluptatem.
+                                    Praesentium, eum eveniet esse enim fugiat harum quasi!
+                                    Perferendis atque exercitationem qui officiis omnis, dolor vel
+                                    minus cumque aperiam perspiciatis consequuntur ipsam unde sint
+                                    obcaecati vero! Voluptatibus, saepe? Nostrum illo quasi quos
+                                    vitae voluptate quaerat, culpa, eos ad excepturi corrupti cum
+                                    adipisci dolor, eligendi a illum dolorum maiores atque quo
+                                    repellendus debitis vel blanditiis cupiditate mollitia
+                                    dolorem. Rerum eveniet nesciunt pariatur eius nulla ipsam
+                                    tempore suscipit officiis praesentium possimus quo saepe,
+                                    inventore sit labore? Dignissimos delectus, architecto nulla
+                                    porro deleniti neque quasi, veritatis aliquid eveniet, quam
+                                    provident commodi adipisci necessitatibus alias. Facilis, qui
+                                    dolorum. Delectus at rerum corporis. Quibusdam aliquam
+                                    voluptates, velit praesentium quia fugiat et nihil! Quia,
+                                    pariatur totam? Voluptas pariatur libero nam molestias
+                                    aspernatur. Consectetur saepe dolor ratione optio quasi id,
+                                    expedita nihil omnis porro harum est assumenda eveniet. Fugiat
+                                    reiciendis similique eos exercitationem, dolor repudiandae
+                                    deserunt deleniti unde! Eos dicta odit laboriosam earum,
+                                    maxime fugiat, totam tempore architecto quo ipsa, alias minima
+                                    doloremque ullam perferendis dignissimos dolorem. Quas
+                                    molestias deserunt, quo omnis asperiores ducimus modi
+                                    perspiciatis non totam temporibus rem ullam, debitis vel
+                                    deleniti est voluptas doloribus, sequi voluptates aperiam
+                                    fugiat delectus similique maxime nisi? Voluptates voluptate
+                                    repudiandae labore, dolore dolores unde iste id illum nostrum
+                                    quos voluptatem nihil necessitatibus similique dolorem
+                                    molestiae sapiente quo tenetur fuga dicta! Cupiditate, sed
+                                    quam! Voluptatibus dolorem, officiis ipsa perspiciatis debitis
+                                    dolor nisi aperiam amet eos ut deleniti dicta cumque sequi
+                                    illo illum maxime repellat vitae deserunt cum molestiae
+                                    consequuntur. Rerum itaque minus nulla et totam quasi ad
+                                    doloremque expedita quos? Magnam in saepe, repellendus optio
+                                    commodi dolorum?
+                                </p>
+                            </div>
+                        </div>
+                        <!-- master__navigator item end -->
+                        <!-- master__navigator item start -->
+                        <div class="photo master__navigator_item" id="photo">
+                            <div class="master__body_content">
+                                <h1>Photo Gallery</h1>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Optio, quae quas quisquam debitis, sequi ea tenetur dolor
+                                    consectetur delectus sed culpa odit dolorum tempora laborum
+                                    labore fugit deserunt iste suscipit.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- master__navigator item end -->
+                    </div>
                 </div>
-              </div>
-              <!-- master__navigator item end -->
-              <!-- master__navigator item start -->
-              <div class="charter master__navigator_item" id="charter">
-                <div class="master__body_content">
-                  <h1>Charter Members</h1>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Optio, quae quas quisquam debitis, sequi ea tenetur dolor
-                    consectetur delectus sed culpa odit dolorum tempora laborum
-                    labore fugit deserunt iste suscipit.
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Iusto, hic quia asperiores, neque quis facere aliquam libero
-                  tempora aliquid magni eum voluptas praesentium beatae sapiente
-                  nihil vitae doloribus animi quisquam quasi quidem eius
-                  molestias dolores numquam? Cupiditate magni facere eaque iusto
-                  necessitatibus asperiores inventore ab! Sunt, quis ad ut
-                  repellendus tempora reprehenderit velit? Eius tempore nihil
-                  qui quae odit. Obcaecati quasi totam hic. Aliquid, magnam
-                  libero cupiditate possimus dicta quos, quam iure est assumenda
-                  iste corporis nisi consectetur. Temporibus sapiente natus
-                  eveniet, nisi officia mollitia error animi ullam, numquam,
-                  quia et veritatis ad delectus eligendi quam incidunt odio
-                  optio cum. Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Nemo dolore earum aliquam fuga blanditiis dolor tempore
-                  a labore alias natus, odio minima nobis reprehenderit unde
-                  perspiciatis libero temporibus quis. Possimus corporis
-                  reprehenderit nam accusantium minus odit, aut placeat! Dolores
-                  dicta adipisci aspernatur illum, architecto commodi libero
-                  expedita harum ipsa officia ratione odit temporibus
-                  perspiciatis ab sapiente aliquid quo iusto quam. Odio labore
-                  blanditiis quae illum quasi eligendi animi consequatur
-                  veritatis aut ducimus! Totam quidem, est voluptatem laborum
-                  repellendus suscipit doloribus itaque quas quam molestiae
-                  expedita. Nobis, maxime aspernatur adipisci magni, ad odio
-                  saepe inventore maiores ratione aperiam accusantium id
-                  quibusdam consectetur molestiae eius illo! Debitis quia
-                  numquam et enim quasi labore quod neque quaerat, fugit ipsam
-                  distinctio tempora delectus similique fuga necessitatibus
-                  saepe. Rerum eius, soluta at deserunt omnis, excepturi
-                  aspernatur alias eos architecto nam ipsum reiciendis in fugiat
-                  eum ducimus harum. Nesciunt aspernatur consequatur tenetur ex
-                  nemo officiis aut laboriosam impedit rem, delectus, odio animi
-                  ea itaque eveniet, expedita blanditiis! Quo harum officia vel
-                  consequatur, labore corrupti eos animi nulla voluptas
-                  blanditiis. Dolor quod, facere amet cumque sint sit aliquam
-                  voluptatum blanditiis corrupti suscipit praesentium, corporis
-                  veniam soluta voluptates iste neque natus! Eum, eius. Nihil
-                  nam corporis esse minus sit deleniti eum laborum provident
-                  consectetur! Deserunt, natus dolorem. Ex facere commodi
-                  perspiciatis odio reiciendis sit quos. Recusandae doloremque,
-                  commodi nihil odit dicta, possimus iste sapiente autem quas
-                  repellendus repellat modi magni, nemo cumque voluptatibus ad
-                  iure fugit blanditiis quisquam optio ea voluptatem.
-                  Praesentium, eum eveniet esse enim fugiat harum quasi!
-                  Perferendis atque exercitationem qui officiis omnis, dolor vel
-                  minus cumque aperiam perspiciatis consequuntur ipsam unde sint
-                  obcaecati vero! Voluptatibus, saepe? Nostrum illo quasi quos
-                  vitae voluptate quaerat, culpa, eos ad excepturi corrupti cum
-                  adipisci dolor, eligendi a illum dolorum maiores atque quo
-                  repellendus debitis vel blanditiis cupiditate mollitia
-                  dolorem. Rerum eveniet nesciunt pariatur eius nulla ipsam
-                  tempore suscipit officiis praesentium possimus quo saepe,
-                  inventore sit labore? Dignissimos delectus, architecto nulla
-                  porro deleniti neque quasi, veritatis aliquid eveniet, quam
-                  provident commodi adipisci necessitatibus alias. Facilis, qui
-                  dolorum. Delectus at rerum corporis. Quibusdam aliquam
-                  voluptates, velit praesentium quia fugiat et nihil! Quia,
-                  pariatur totam? Voluptas pariatur libero nam molestias
-                  aspernatur. Consectetur saepe dolor ratione optio quasi id,
-                  expedita nihil omnis porro harum est assumenda eveniet. Fugiat
-                  reiciendis similique eos exercitationem, dolor repudiandae
-                  deserunt deleniti unde! Eos dicta odit laboriosam earum,
-                  maxime fugiat, totam tempore architecto quo ipsa, alias minima
-                  doloremque ullam perferendis dignissimos dolorem. Quas
-                  molestias deserunt, quo omnis asperiores ducimus modi
-                  perspiciatis non totam temporibus rem ullam, debitis vel
-                  deleniti est voluptas doloribus, sequi voluptates aperiam
-                  fugiat delectus similique maxime nisi? Voluptates voluptate
-                  repudiandae labore, dolore dolores unde iste id illum nostrum
-                  quos voluptatem nihil necessitatibus similique dolorem
-                  molestiae sapiente quo tenetur fuga dicta! Cupiditate, sed
-                  quam! Voluptatibus dolorem, officiis ipsa perspiciatis debitis
-                  dolor nisi aperiam amet eos ut deleniti dicta cumque sequi
-                  illo illum maxime repellat vitae deserunt cum molestiae
-                  consequuntur. Rerum itaque minus nulla et totam quasi ad
-                  doloremque expedita quos? Magnam in saepe, repellendus optio
-                  commodi dolorum?
-                </p>
+            </div>
+        </section>
+        <!-- master end    -->
+        <!-- contact start -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="row jc-spaceB f-wrap">
+                    <div class="contact__quicklinks">
+                        <div class="contact__header row">
+                            <i class="fas fa-list-ul"></i>
+                            <h3>quick links</h3>
+                        </div>
+                        <div class="contact__quicklinks_links contact__body row jc-spaceB">
+                            <div class="contact__quicklinks_links_col">
+                                <div>
+                                    &#62; <a class="contact__quicklinks_link" href="">Home</a>
+                                </div>
+                                <div>
+                                    &#62; <a class="contact__quicklinks_link" href="">Home</a>
+                                </div>
+                                <div>
+                                    &#62; <a class="contact__quicklinks_link" href="">Home</a>
+                                </div>
+                                <div>
+                                    &#62; <a class="contact__quicklinks_link" href="">Home</a>
+                                </div>
+                                <div>
+                                    &#62; <a class="contact__quicklinks_link" href="">Home</a>
+                                </div>
+                                <div>
+                                    &#62; <a class="contact__quicklinks_link" href="">Home</a>
+                                </div>
+                            </div>
+                            <div class="contact__quicklinks_links_col">
+                                <div class="special_child">
+                                    <span> &#62; </span>
+                                    <a class="contact__quicklinks_link" href="">Lorem ipsum dolor sitlr</a>
+                                </div>
+                                <div>
+                                    &#62; <a class="contact__quicklinks_link" href="">About</a>
+                                </div>
+                                <div>
+                                    &#62; <a class="contact__quicklinks_link" href="">About</a>
+                                </div>
+                                <div>
+                                    &#62; <a class="contact__quicklinks_link" href="">About</a>
+                                </div>
+                                <div>
+                                    &#62; <a class="contact__quicklinks_link" href="">About</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__officedetails">
+                        <div class="contact__header content__officedetails_header row">
+                            <i class="fas fa-list-ul"></i>
+                            <h3>office details</h3>
+                        </div>
+                        <div class="contact__officedetails_details contact__body">
+                            <h2>office address</h2>
+                            <b>rtn md. rafiqul alam</b>
+                            <p>Flat # A1, H # 06, R # 02, Sec # 10 Uttara, Dhaka-1230</p>
+                            <p>Cell: +880 171 9123443</p>
+                            <p>E-mail: rtnfariq@yahoo.com</p>
+                        </div>
+                    </div>
+                    <div class="contact__sociallinks">
+                        <div class="contact__header row">
+                            <i class="fas fa-list-ul"></i>
+                            <h3>follow us</h3>
+                        </div>
+                        <div class="contact__sociallinks_details contact__body">
+                            Lorem ipsum dolor sit amet.
+                            <div class="contact__sociallinks_details_links row">
+                                <a href=""> <i class="fab fa-facebook-square"></i> </a>
+                                <a href=""> <i class="fab fa-twitter-square"></i> </a>
+                                <a href=""> <i class="fab fa-linkedin"></i> </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <!-- master__navigator item end -->
-              <!-- master__navigator item start -->
-              <div class="photo master__navigator_item" id="photo">
-                <div class="master__body_content">
-                  <h1>Photo Gallery</h1>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Optio, quae quas quisquam debitis, sequi ea tenetur dolor
-                    consectetur delectus sed culpa odit dolorum tempora laborum
-                    labore fugit deserunt iste suscipit.
-                  </p>
+            </div>
+        </section>
+        <!-- contact end   -->
+        <footer>
+            <div class="container">
+                <div class="row jc-spaceB align-center">
+                    <div class="footer__copyright">
+                        Copyright &copy; 2021 Rotary Club of Dhaka Dynamic, All Rights
+                        Reserved.
+                    </div>
+                    <div class="footer__extra row align-center">
+                        <span><a href="#"> Webmail </a> </span>
+                        <span><a href="#"> Awards </a> </span>
+                    </div>
                 </div>
-              </div>
-              <!-- master__navigator item end -->
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- master end    -->
-      <!-- contact start -->
-      <section class="contact" id="contact">
-        <div class="container">
-          <div class="row jc-spaceB f-wrap">
-            <div class="contact__quicklinks">
-              <div class="contact__header row">
-                <i class="fas fa-list-ul"></i>
-                <h3>quick links</h3>
-              </div>
-              <div
-                class="contact__quicklinks_links contact__body row jc-spaceB"
-              >
-                <div class="contact__quicklinks_links_col">
-                  <div>
-                    &#62; <a class="contact__quicklinks_link" href="">Home</a>
-                  </div>
-                  <div>
-                    &#62; <a class="contact__quicklinks_link" href="">Home</a>
-                  </div>
-                  <div>
-                    &#62; <a class="contact__quicklinks_link" href="">Home</a>
-                  </div>
-                  <div>
-                    &#62; <a class="contact__quicklinks_link" href="">Home</a>
-                  </div>
-                  <div>
-                    &#62; <a class="contact__quicklinks_link" href="">Home</a>
-                  </div>
-                  <div>
-                    &#62; <a class="contact__quicklinks_link" href="">Home</a>
-                  </div>
-                </div>
-                <div class="contact__quicklinks_links_col">
-                  <div class="special_child">
-                    <span> &#62; </span>
-                    <a class="contact__quicklinks_link" href=""
-                      >Lorem ipsum dolor sitlr</a
-                    >
-                  </div>
-                  <div>
-                    &#62; <a class="contact__quicklinks_link" href="">About</a>
-                  </div>
-                  <div>
-                    &#62; <a class="contact__quicklinks_link" href="">About</a>
-                  </div>
-                  <div>
-                    &#62; <a class="contact__quicklinks_link" href="">About</a>
-                  </div>
-                  <div>
-                    &#62; <a class="contact__quicklinks_link" href="">About</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="contact__officedetails">
-              <div class="contact__header content__officedetails_header row">
-                <i class="fas fa-list-ul"></i>
-                <h3>office details</h3>
-              </div>
-              <div class="contact__officedetails_details contact__body">
-                <h2>office address</h2>
-                <b>rtn md. rafiqul alam</b>
-                <p>Flat # A1, H # 06, R # 02, Sec # 10 Uttara, Dhaka-1230</p>
-                <p>Cell: +880 171 9123443</p>
-                <p>E-mail: rtnfariq@yahoo.com</p>
-              </div>
-            </div>
-            <div class="contact__sociallinks">
-              <div class="contact__header row">
-                <i class="fas fa-list-ul"></i>
-                <h3>follow us</h3>
-              </div>
-              <div class="contact__sociallinks_details contact__body">
-                Lorem ipsum dolor sit amet.
-                <div class="contact__sociallinks_details_links row">
-                  <a href=""> <i class="fab fa-facebook-square"></i> </a>
-                  <a href=""> <i class="fab fa-twitter-square"></i> </a>
-                  <a href=""> <i class="fab fa-linkedin"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- contact end   -->
-      <footer>
-        <div class="container">
-          <div class="row jc-spaceB align-center">
-            <div class="footer__copyright">
-              Copyright &copy; 2021 Rotary Club of Dhaka Dynamic, All Rights
-              Reserved.
-            </div>
-            <div class="footer__extra row align-center">
-              <span><a href="#"> Webmail </a> </span>
-              <span><a href="#"> Awards </a> </span>
-            </div>
-          </div>
-        </div>
-      </footer>
+        </footer>
     </div>
 
     <script src="./js/app.js"></script>
-  </body>
+</body>
+
 </html>
