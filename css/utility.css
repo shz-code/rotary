@@ -10,6 +10,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--primary-font);
 }
@@ -78,5 +82,9 @@ body {
 
 .nav_adjust.pos {
   margin-top: 10px;
+}
+
+.section {
+  margin: 20px 0;
 }
 /*# sourceMappingURL=utility.css.map */
