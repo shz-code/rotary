@@ -444,12 +444,23 @@ header nav ul li a {
   background: #ededed;
 }
 
-#master .master__container .master__body .master__body_content {
-  text-align: justify;
-}
-
 #master .master__container .master__body .master__body_content h1 {
   text-transform: capitalize;
+}
+
+#master .master__container .master__body .master__body_content p {
+  display: inline-block;
+  text-align: justify;
+  height: 500px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+#master .master__container .master__body .master__body_content p::-webkit-scrollbar {
+  display: none;
 }
 
 @media (max-width: 1000px) {
