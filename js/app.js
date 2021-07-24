@@ -30,7 +30,7 @@ function bodyHide() {
 function masterNavToggle(){
     masterNavtog.classList.toggle('active');
     masterNav.classList.toggle("active");
-    // bodyHide();
+    bodyHide();
 }
 masterNav_Link.forEach((i)=>{
     i.addEventListener("click" , ()=>{
@@ -38,9 +38,12 @@ masterNav_Link.forEach((i)=>{
     });
 });
 document.addEventListener("click", (e)=>{
+    console.log(1);
     if(body.classList.contains("hide")){
+        console.log(2);
         if(!e.target.classList.contains("master__navigator_link") 
         && !e.target.classList.contains("master__navtog")){
+            console.log(3);
             masterNavToggle();
         }
     }
