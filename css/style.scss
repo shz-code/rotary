@@ -322,15 +322,17 @@ header {
           display: none;
           list-style: none;
           position: absolute;
-          right: -70%;
+          right: -100%;
           top: 0;
           height: auto;
-          width: 70%;
+          width: 100%;
           background: var(--bg-primary);
           li {
-            padding: 10px 20px;
-            position: relative;
-            z-index: 10;
+            a{
+              padding:  0;
+              position: relative;
+              z-index: 10;
+            }
             &:hover {
               &::before {
                 content: "";

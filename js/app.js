@@ -9,8 +9,9 @@ let masterNavtog = document.querySelector(".master__navtog");
 let masterNav = document.querySelector('.master__navigator');
 let masterNav_Link = masterNav.querySelectorAll(".master__navigator_link.closable");
 let master__nav_clickable = masterNav.querySelector(".master__nav_clickable");
+let masterNestedLink = document.querySelectorAll(".master__navigator_link.nested_link")
 let body = document.querySelector("body");
-
+let masterNavClose = false;
 hamBtn.addEventListener("click", ()=>{
     nav__ul.classList.toggle("nav__ul__open");
     navAdjustment.classList.toggle('pos');
@@ -23,6 +24,12 @@ function historytog(){
 };
 function gallary(){
     master__nav_clickable.classList.toggle("nested");
+    if(master__nav_clickable.classList.contains("nested")){
+        masterNavClose = true;
+    }
+    else{
+        masterNavClose = false;
+    };
 };
 function bodyHide() {
     body.classList.toggle("hide");
@@ -33,19 +40,22 @@ function masterNavToggle(){
     if(window.innerWidth < 1000){
         bodyHide();
     }
+    if(masterNavClose){
+        master__nav_clickable.classList.remove("nested");
+    }
 }
 masterNav_Link.forEach((i)=>{
-    i.addEventListener("click" , ()=>{
+    i.addEventListener("click" , (e)=>{
         masterNavToggle();
+        if(e.target.classList.contains("nested_link")){
+            gallary();
+        }
     });
 });
 document.addEventListener("click", (e)=>{
-    console.log(1);
     if(body.classList.contains("hide")){
-        console.log(2);
         if(!e.target.classList.contains("master__navigator_link") 
         && !e.target.classList.contains("master__navtog")){
-            console.log(3);
             masterNavToggle();
         }
     }

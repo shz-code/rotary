@@ -401,15 +401,15 @@ header nav ul li a {
   display: none;
   list-style: none;
   position: absolute;
-  right: -70%;
+  right: -100%;
   top: 0;
   height: auto;
-  width: 70%;
+  width: 100%;
   background: var(--bg-primary);
 }
 
-#master .master__container .master__navigator .master__navigator_link .master__navigator_link_nested li {
-  padding: 10px 20px;
+#master .master__container .master__navigator .master__navigator_link .master__navigator_link_nested li a {
+  padding: 0;
   position: relative;
   z-index: 10;
 }
