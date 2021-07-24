@@ -608,6 +608,12 @@ header nav ul li a {
   margin-left: 0;
 }
 
+@media (max-width: 1000px) {
+  .contact .row .contact__officedetails, .contact .row .contact__sociallinks, .contact .row .contact__quicklinks {
+    width: 100%;
+  }
+}
+
 footer {
   background: black;
 }

@@ -494,6 +494,9 @@ header {
       }
     }
     @media (max-width: 1000px) {
+      .contact__officedetails,.contact__sociallinks,.contact__quicklinks{
+        width: 100%;
+      }
     }
   }
 }
