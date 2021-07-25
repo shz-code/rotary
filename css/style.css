@@ -62,8 +62,17 @@ header nav ul {
 
 header nav ul li {
   list-style: none;
-  padding: 10px 0;
   border-left: 2px solid white;
+}
+
+header nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+header nav ul li a:hover {
+  background: rgba(0, 0, 0, 0.219);
 }
 
 header nav ul li:hover.nav__clickable span {
@@ -122,11 +131,16 @@ header nav ul li.nav__clickable .nav__nestedNav {
 }
 
 header nav ul li.nav__clickable .nav__nestedNav li {
-  width: 100%;
   border: none;
 }
 
-header nav ul li.nav__clickable .nav__nestedNav li:hover {
+header nav ul li.nav__clickable .nav__nestedNav li a {
+  padding: 10px 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+header nav ul li.nav__clickable .nav__nestedNav li a:hover {
   background: rgba(0, 0, 0, 0.219);
 }
 
@@ -140,7 +154,6 @@ header nav ul li.nav__clickable span {
 }
 
 header nav ul li a {
-  margin: 0 20px;
   text-transform: capitalize;
   color: white;
   text-decoration: none;
@@ -182,9 +195,6 @@ header nav ul li a {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-  header nav ul li:hover .nav__nestedNav {
-    display: none !important;
-  }
   header nav ul li:last-child {
     border-right: none;
   }
@@ -201,7 +211,7 @@ header nav ul li a {
   }
   header nav ul li.nav__clickable .nav__nestedNav {
     display: none !important;
-    background: cadetblue;
+    background: white;
     position: relative;
     top: 0;
     width: 90%;
@@ -211,6 +221,9 @@ header nav ul li a {
     border-right: 1px solid white;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+  }
+  header nav ul li.nav__clickable .nav__nestedNav li a {
+    color: black;
   }
   header .header__btn {
     background: var(--bg-primary);
@@ -452,6 +465,7 @@ header nav ul li a {
 }
 
 #master .master__container .master__body {
+  scroll-behavior: smooth;
   margin: 0 40px;
   -webkit-box-flex: 75%;
       -ms-flex: 75%;
@@ -499,7 +513,7 @@ header nav ul li a {
   content: "No Scroll";
   font-size: 0.8rem;
   position: relative;
-  left: 50px;
+  left: 10px;
 }
 
 #master .master__container .master__body .master__navigator_item:nth-child(3) p {
@@ -685,7 +699,7 @@ header nav ul li a {
     position: absolute;
     background: rgba(0, 0, 0, 0.301);
     margin-left: 5px;
-    top: 1%;
+    top: 7%;
     line-height: 30px;
     text-align: center;
     font-size: 12px;
